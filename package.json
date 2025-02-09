@@ -15,9 +15,5 @@
   "author": {
     "name": "VarCo",
     "url": "https://t.me/+9EjekiH0imM3NmIy"
-  },
-  "dependencies": {
-    "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
-    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask"
   }
 }
