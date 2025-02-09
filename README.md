@@ -9,14 +9,19 @@ from git URL".
 
 ![](https://user-images.githubusercontent.com/46207/79450714-3aadd100-8020-11ea-8aae-b8d87fc4d7be.png)
 
-URL:
-
-```
-https://github.com/Varuzh29/google-sheets-downloader.git
-```
-
 This package depends on [NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
-and [UniTask](https://github.com/Cysharp/UniTask) packages.
+and [UniTask](https://github.com/Cysharp/UniTask) packages. Install them first!
+
+NuGetForUnity URL:
+```
+https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity
+```
+
+UniTask URL:
+```
+https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask
+```
+
 After installation, download following dependencies by using NuGetForUnity:
 
 ```
@@ -33,6 +38,14 @@ After installation, download following dependencies by using NuGetForUnity:
 
 You can add those dependencies by modifying `packages.config` file or manually by opening
 `NuGet > Manage NuGet Packages` window.
+
+Now you can install `Google Sheets Downloader`
+
+URL:
+
+```
+https://github.com/Varuzh29/google-sheets-downloader.git
+```
 
 ## Usage
 
