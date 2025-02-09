@@ -39,29 +39,7 @@ namespace VarCo.GoogleSheetsDownloader
 
                 EditorUtility.DisplayProgressBar("Downloading", "Downloading...", 0.3f);
                 IList<IList<object>> rawTable = await DownloadAsync();
-
-                if (rawTable is null || rawTable.Count < 1)
-                {
-                    _isBusy = false;
-                    return;
-                }
-
-                IList<object> headers = rawTable[0];
-
-                List<Dictionary<string, string>> tableWithHeaders = new(rawTable.Count);
-
-                for (int row = 1; row < rawTable.Count; row++)
-                {
-                    IList<object> rowValues = rawTable[row];
-                    for (int column = 0; column < rowValues.Count; column++)
-                    {
-                        string value = rowValues[column].ToString();
-                        string key = headers[column].ToString();
-                        tableWithHeaders.Add(new Dictionary<string, string> { { key, value } });
-                    }
-                }
-
-                string json = JsonConvert.SerializeObject(tableWithHeaders, _formatting);
+                string json = JsonConvert.SerializeObject(rawTable, _formatting);
                 EditorUtility.DisplayProgressBar("Downloading", "Writing to file...", 0.6f);
                 await File.WriteAllTextAsync(_savePath, json);
 
