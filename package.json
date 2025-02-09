@@ -1,0 +1,23 @@
+{
+  "name": "com.varco.google-sheets-downloader",
+  "version": "1.0.0",
+  "displayName": "Google Sheets Downloader",
+  "description": "A simple Unity package that downloads data from a Google Sheet and stores it in a JSON file.",
+  "documentationUrl": "https://github.com/Varuzh29/google-sheets-downloader/blob/main/README.md",
+  "keywords": [
+    "google",
+    "sheets",
+    "download",
+    "json",
+    "data",
+    "varco"
+  ],
+  "author": {
+    "name": "VarCo",
+    "url": "https://t.me/+9EjekiH0imM3NmIy"
+  },
+  "dependencies": {
+    "com.github-glitchenzo.nugetforunity": "https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask"
+  }
+}
