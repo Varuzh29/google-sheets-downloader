@@ -4,7 +4,7 @@ using UnityEngine;
 namespace VarCo.GoogleSheetsDownloader
 {
     [CustomEditor(typeof(GoogleSheetDownloader))]
-    public class GoogleSheetDownloaderEditor : Editor
+    public class GoogleSheetDownloaderEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {
